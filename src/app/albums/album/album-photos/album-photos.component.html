@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<div mat-dialog-content>
+  <mat-grid-list cols="1" rowHeight="500px">
+    <mat-grid-tile>
+      <img [src]="data.photos[index].url" [alt]="data.photos[index].title" />
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="prev()" [disabled]="first" color="primary">Prev</button>
+  <button mat-button (click)="next()" [disabled]="last" color="primary">Next</button>
+</div>

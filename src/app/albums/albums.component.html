@@ -1,0 +1,5 @@
+<mat-grid-list cols="2" rowHeight="320px">
+  <mat-grid-tile *ngFor="let album of albums">
+    <app-album [album]="album"></app-album>
+  </mat-grid-tile>
+</mat-grid-list>

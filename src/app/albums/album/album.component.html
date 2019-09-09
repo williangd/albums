@@ -1,0 +1,10 @@
+<mat-card (click)="onClick()">
+  <mat-grid-list cols="2">
+    <mat-grid-tile>
+      <img [attr.src]="photos[0]?.thumbnailUrl" alt="album thumbnail" />
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card-title>{{ album.title }}</mat-card-title>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
